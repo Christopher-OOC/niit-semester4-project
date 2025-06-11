@@ -11,11 +11,11 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
 
         registry.addMapping("/**")  // Apply to all endpoints
-                        .allowedOrigins("http://localhost:5173", "https://frontend-five-ebon-62.vercel.app", "http://localhost:5500")
+                        .allowedOrigins("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .exposedHeaders("*")
-                        .allowCredentials(true)
+                        .allowCredentials(false)
                         .maxAge(10000);
     }
 }
