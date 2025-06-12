@@ -1,6 +1,7 @@
 package com.javalord.reactapp.spring_react_app.configs;
 
 import org.springframework.stereotype.Component;
+import jakarta.servlet.Filter;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
